@@ -30,17 +30,17 @@ function scripts() {
 
 function images() {
     return src ([
-        'src/img/src/*.*',
-        '!src/img/src/*.svg',
+        'src/img/src/**/*.*',
+        '!src/img/src/**/*.svg',
     ], {base : 'src/img/src', encoding: false})
     .pipe(newer('src/img'))
     .pipe(avif())
 
-    .pipe(src('src/img/src/*.*', {base : 'src/img/src', encoding: false}))
+    .pipe(src('src/img/src/**/*.*', {base : 'src/img/src', encoding: false}))
     .pipe(newer('src/img'))
     .pipe(webp())
 
-    .pipe(src('src/img/src/*.*', {base : 'src/img/src', encoding: false}))
+    .pipe(src('src/img/src/**/*.*', {base : 'src/img/src', encoding: false}))
     .pipe(newer('src/img'))
     .pipe(imagemin())
 
@@ -53,10 +53,10 @@ function watching() {
             baseDir: "src/"
         }
     })
-    watch(['src/scss/style.scss'], styles)
-    watch(['src/img/src'], images)
+    watch(['src/scss/**/*.scss'], styles)
     watch(['src/js/script.js'], scripts)
-    watch(['src/**/*.html']).on('change', browserSync.reload);
+    watch(['src/**/*.html']).on('change', browserSync.reload)
+    watch(['src/img/src/**/*'], images);
 }
 
 function cleanDist() {

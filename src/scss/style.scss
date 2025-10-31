@@ -1,2 +1,28 @@
+@use 'libs/bootstrap-reboot.min';
+@use 'libs/fonts';
+
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+
+@use 'blocks/title';
+@use 'blocks/botton';
+@use 'blocks/promo';
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+a {
+    
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+}

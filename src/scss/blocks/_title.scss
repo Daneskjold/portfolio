@@ -1,0 +1,15 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.title {
+    @include m.bold-text;
+
+    &--fz16 {
+        font-size: 16px;
+    }
+
+    &--fz48 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}

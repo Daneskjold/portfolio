@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.promo {
+    min-height: 800px;
+    background: url('../../img/main_bg.jpg') no-repeat center / cover;
+    padding: 206px 0;
+
+    &__title {
+        max-width: 532px;
+        margin: 9px 0 25px;
+    }
+
+    .title--fz16 {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: -6px;
+            content: '';
+            @include m.circle;
+        }
+    }
+
+
+    &__link {
+        display: inline-block;
+        width: 135px;
+        height: 45px;
+        @include m.bold-text;
+        text-align: center;
+        line-height: 45px;
+    }
+
+}

@@ -7,7 +7,7 @@
 @use 'blocks/title';
 @use 'blocks/botton';
 @use 'blocks/promo';
-
+@use 'blocks/sidepanel';
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -16,13 +16,4 @@ body {
 .container {
     width: 1140px;
     margin: 0 auto;
-}
-
-a {
-    
-    &:hover {
-        text-decoration: none;
-        color: #fff;
-    }
-
 }

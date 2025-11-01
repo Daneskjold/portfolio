@@ -1,12 +1,15 @@
-@mixin bold-text ($fz: 14px) {
-    color: #000000;
-    font-weight: 700;
-    font-size: $fz;
-}
+@use 'variables' as v;
 
-@mixin circle {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: #FFA501;
+@mixin before_circle {
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -25%;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: v.$main-color;
+    }
 }

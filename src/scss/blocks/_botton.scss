@@ -2,12 +2,8 @@
 @use '../base/mixins' as m;
 
 .btn {
-    display: inline-block;
-    width: 135px;
     height: 45px;
-    @include m.bold-text;
     background: v.$main-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    line-height: 45px;
+    padding: 12px 25px;
 }

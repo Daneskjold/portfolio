@@ -20,10 +20,11 @@
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://metatags.io/" />
     <meta property="twitter:title" content="Мое портфолио" />
-    <meta property="twitter:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне" />
+    <meta property="twitter:description"
+        content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне" />
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
-    
+
     <!-- Favicon https://www.favicon-generator.org/ -->
     <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
@@ -46,9 +47,16 @@
 </head>
 
 <body>
+    <aside class="sidepanel">
+        <a href="#" class="sidepanel__link"><img src="icons/social/facebook.svg" alt="facebook"></a>
+        <a href="#" class="sidepanel__link"><img src="icons/social/instagram.svg" alt="instagram"></a>
+        <a href="#" class="sidepanel__link"><img src="icons/social/github.svg" alt="github"></a>
+        <div class="sidepanel__divider"></div>
+        <div class="sidepanel__text"><span>Социальные сети</span></div>
+    </aside>
     <section class="promo">
         <div class="container">
-            <div class="title title--fz16">Меня зовут Александра Смит</div>
+            <div class="title title--fz16 promo__subtitle">Меня зовут Александра Смит</div>
             <h1 class="title title--fz48 promo__title">Я web-разработчик из города Москва</h1>
             <div class="promo__btns">
                 <a href="#" class="promo__link btn">Портфолио</a>

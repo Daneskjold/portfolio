@@ -1,0 +1,114 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.resume {
+    padding-top: 126px;
+
+    &__title {
+        position: relative;
+        text-align: center;
+        @include m.before_circle;
+
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    &__wrapper {
+        display: grid;
+        padding: 60px 89px 0 65px;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 136px;
+    }
+
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: v.$main-color;
+                border-radius: 50%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%)
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+
+            li {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 8px);
+                    position: absolute;
+                    top: -8px;
+                    background: #000;
+                }
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 62px;
+            height: 1px;
+            width: 43px;
+            background-color: #000;
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+        }
+
+        &-icon {
+            position: absolute;
+            bottom: 0;
+            left: 60px;
+            @include m.before_circle;
+            &::before {
+                top: -14px;
+                left: -17px;
+            }
+        }
+
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &-body {
+            padding-left: 35px;
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    .title {}
+
+    .title--fz20 {}
+
+
+
+    .title--fz14 {}
+
+}

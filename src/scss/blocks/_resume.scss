@@ -4,22 +4,6 @@
 .resume {
     padding-top: 126px;
 
-    &__title {
-        position: relative;
-        text-align: center;
-        @include m.before_circle;
-
-        &:before {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-
-    &__subtitle {
-        text-align: center;
-        margin-top: 6px;
-    }
-
     &__wrapper {
         display: grid;
         padding: 60px 89px 0 65px;
@@ -67,6 +51,7 @@
 
     &__item {
         position: relative;
+
         &::before {
             content: '';
             position: absolute;
@@ -75,6 +60,7 @@
             width: 43px;
             background-color: #000;
         }
+
         &-head {
             position: relative;
             padding: 45px 0 0 100px;
@@ -85,6 +71,7 @@
             bottom: 0;
             left: 60px;
             @include m.before_circle;
+
             &::before {
                 top: -14px;
                 left: -17px;

@@ -12,6 +12,8 @@
 @use 'blocks/about';
 @use 'blocks/resume';
 @use 'blocks/skills';
+@use 'blocks/portfolio';
+@use 'blocks/price';
 
 body {
     font-family: 'Montserrat', sans-serif;

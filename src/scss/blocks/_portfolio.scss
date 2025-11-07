@@ -1,0 +1,38 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.portfolio {
+
+    padding-top: 126px;
+
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template: repeat(2, 280px) / repeat(4, 280px);
+        grid-auto-rows: 280px;
+        gap: 5px;
+    }
+
+    &__item:nth-child(4) {
+        grid-row: 1 / 3;
+        grid-column: 4 / 5;
+    }
+
+    &__item:nth-child(6) {
+        grid-column: 2 / 4;
+    }
+
+    &__item {
+        transition: filter .3s;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:hover {
+            filter: grayscale(100%);
+        }
+    }
+}

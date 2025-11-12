@@ -1,7 +1,7 @@
 @use 'libs/bootstrap-reboot.min';
 @use 'libs/fonts';
 
-@use 'base/variables' as v;
+@use 'base/variables';
 @use 'base/mixins' as m;
 
 @use 'blocks/title';
@@ -15,6 +15,8 @@
 @use 'blocks/portfolio';
 @use 'blocks/price';
 @use 'blocks/contacts';
+
+@use 'blocks/media';
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -32,6 +34,6 @@ h1, h2, h3, h4, h5, h6, p {
 .divider {
     width: 60px;
     height: 3px;
-    background-color: v.$main-color;
+    background-color: var(--main-color);
     margin: 25px auto 0;
 }

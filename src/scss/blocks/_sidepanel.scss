@@ -1,3 +1,5 @@
+@use '../base/mixins' as m;
+
 .sidepanel {
     position: fixed;
     top: 230px;

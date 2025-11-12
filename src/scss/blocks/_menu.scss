@@ -1,4 +1,4 @@
-@use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .hamburger {
     position: absolute;
@@ -44,7 +44,7 @@
     &__block {
         position: relative;
         width: 345px;
-        background: v.$main-color;
+        background: var(--main-color);
         height: 100%;
         padding: 140px 0 0 40px;
         transition: all .6s;

@@ -1,0 +1,47 @@
+@media (max-width:1350px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .title {
+        &--fz48 {
+            font-size: 26px;
+        }
+    }
+
+    .promo {
+        &__title {
+            width: 300px;
+            line-height: 39px;
+        }
+
+        &__btns {
+            margin-top: 32px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}

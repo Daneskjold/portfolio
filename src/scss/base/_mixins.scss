@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use 'variables';
 
 @mixin before_circle {
     &::before {
@@ -10,6 +10,6 @@
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        background: v.$main-color;
+        background: var(--main-color);
     }
 }

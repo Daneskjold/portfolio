@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
     <!-- Primary Meta Tags -->
     <meta name="title" content="Мое портфолио" />
     <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне" />
@@ -24,7 +25,6 @@
         content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне" />
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
-
     <!-- Favicon https://www.favicon-generator.org/ -->
     <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
@@ -39,7 +39,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="icons/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -149,7 +149,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <!-- <section class="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
@@ -533,26 +533,30 @@
                     </div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" id="email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
                             <textarea name="text" id="textarea"></textarea>
                             <label for="textarea">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/Policy.html" target="_blank">политикой конфиденциальности</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>
 
             </div>
         </div>
-    </section>
+    </section> -->
 
     <script src="js/script.min.js"></script>
 </body>

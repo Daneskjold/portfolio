@@ -1,5 +1,3 @@
-@use 'variables';
-
 @mixin before_circle {
     &::before {
         content: '';

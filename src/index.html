@@ -149,11 +149,21 @@
         </div>
     </section>
 
-    <!-- <section class="about">
+    <section class="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main_photo.jpg" alt="photo">
+                    <!-- <img src="img/main_photo.jpg" 
+                         srcset="img/main_photo-min.jpg 300w, img/main_photo.jpg 400w"
+                         sizes= "(max-width: 576px) 300px, (min-width: 577px) 400px"
+                         alt="photo"> -->
+                    <picture>
+                        <source type="image/webp" media="(max-width: 576px)" srcset="img/main_photo-min.webp">
+                        <source media="(max-width: 576px)" srcset="img/main_photo-min.jpg">
+                        <source type="image/webp" media="(min-width: 577px)" srcset="img/main_photo.webp">
+                        <source media="(min-width: 577px)" srcset="img/main_photo.jpg">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
                 </div>
 
                 <div class="about__descr">
@@ -556,7 +566,7 @@
 
             </div>
         </div>
-    </section> -->
+    </section>
 
     <script src="js/script.min.js"></script>
 </body>

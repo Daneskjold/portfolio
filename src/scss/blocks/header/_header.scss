@@ -1,0 +1,59 @@
+@use 'base/mixins' as m;
+
+.header {
+    background-color: var(--main-color);
+    // начало свойств для активации хэдера на скрол
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: transform .2s;
+    &.hide {
+        transform: translateY(-100%);
+    }
+    // конец свойств для активации хэдера на скрол
+    .container {
+        padding: 0;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        border-top: var(--border);
+        border-bottom: var(--border);
+    }
+
+    &__item {
+        border-right: var(--border);
+        height: 71px;
+        width: 100%;
+        transition: background-color .2s;
+
+        &:first-child {
+            border-left: var(--border);
+        }
+
+        &:hover {
+            background-color: #f5f5f5;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include m.parag_s_medium;
+        text-transform: uppercase;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        transition: transform .2s;
+
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+}

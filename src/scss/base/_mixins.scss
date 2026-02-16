@@ -1,8 +1,41 @@
-// @mixin text-fz12bold {
-//     font-size: 12px;
-//     font-weight: 700;
-//     text-transform: uppercase;
-//     letter-spacing: 1px;
-// }
+@mixin parag_s_medium {
+    font-size: 14px;
+    line-height: 1.57;
+    font-weight: 500;
+}
 
-// @include m.before_circle;
+@mixin parag_s_regular {
+    font-size: 14px;
+    line-height: 1.57;
+    font-weight: 400;
+}
+
+@mixin parag_m_regular {
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 400;
+}
+
+@mixin parag_m_light {
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 300;
+}
+
+@mixin parag_l {
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+@mixin h2 {
+    font-size: 92px;
+    line-height: 0.95;
+    font-weight: 400;
+}
+
+@mixin h1 {
+    font-size: 220px;
+    line-height: 0.83;
+    font-weight: 400;
+}

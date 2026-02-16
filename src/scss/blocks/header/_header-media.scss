@@ -1,0 +1,11 @@
+@media (hover: none) {
+    .menu {
+        &__item:hover {
+            background-color: #eee;
+        }
+
+        &__link:hover {
+            transform: scale(1);
+        }
+    }
+}

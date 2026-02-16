@@ -87,8 +87,12 @@ address {
 dl,
 ol,
 ul {
-    margin-top: 0;
-    margin-bottom: 1rem
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
 }
 
 ol ol,
@@ -137,14 +141,10 @@ sup {
 }
 
 a {
-    color: #007bff;
+    display: block;
+    color: #000;
     text-decoration: none;
     background-color: transparent
-}
-
-a:hover {
-    color: #0056b3;
-    text-decoration: underline
 }
 
 a:not([href]):not([tabindex]) {

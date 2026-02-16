@@ -1,29 +1,26 @@
-@use 'libs/bootstrap-reboot.min';
+@use 'libs/reboot';
 @use 'libs/fonts';
 
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+
+@use 'blocks/header/header';
+
+@use 'blocks/header/header-media';
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-family: 'Geist', sans-serif;
+    @include m.parag_m_light;
+    background-color: var(--main-color);
 }
 
 .container {
-    width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
-}
-
-a {
-    display: inline-block;
-
-    &:hover {
-        text-decoration: none;
-    }
 }
 
 // Прижатый футер начало
@@ -40,5 +37,6 @@ body {
 
 .main {
     flex-grow: 1;
+    padding-top: 73px; // свойство для активации хэдера на скрол
 }
 // Прижатый футер конец

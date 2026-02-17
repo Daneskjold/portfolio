@@ -1,11 +1,17 @@
 @media (hover: none) {
     .menu {
         &__item:hover {
-            background-color: #eee;
+            background-color: transparent;
         }
 
         &__link:hover {
-            transform: scale(1);
+            transform: none;
         }
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu__list {
+        border-inline: var(--border);
     }
 }

@@ -32,8 +32,8 @@
         width: 100%;
         transition: background-color .2s;
 
-        &:first-child {
-            border-left: var(--border);
+        &:last-child {
+            border-right: none;
         }
 
         &:hover {

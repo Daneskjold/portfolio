@@ -5,8 +5,10 @@
 @use 'base/mixins' as m;
 
 @use 'blocks/header/header';
+@use 'blocks/footer/footer';
 
 @use 'blocks/header/header-media';
+@use 'blocks/footer/footer-media';
 
 html {
     scroll-behavior: smooth;
@@ -40,3 +42,7 @@ body {
     padding-top: 73px; // свойство для активации хэдера на скрол
 }
 // Прижатый футер конец
+
+.visually-hidden {
+    display: none;
+}

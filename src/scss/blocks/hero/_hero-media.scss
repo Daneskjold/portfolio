@@ -1,0 +1,26 @@
+@media (min-width: 650px) {
+    .hero {
+        &__content {
+            display: flex;
+        }
+
+        &__description {
+            width: 75%;
+            padding: 30px 32px;
+            border-right: var(--border);
+        }
+    }
+
+    .social {
+        width: 25%;
+        padding: 28px 32px 28px 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        &__title {
+            font-size: 248px;
+        }
+    }
+}

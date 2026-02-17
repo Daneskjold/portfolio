@@ -6,9 +6,11 @@
 
 @use 'blocks/header/header';
 @use 'blocks/footer/footer';
+@use 'blocks/hero/hero';
 
 @use 'blocks/header/header-media';
 @use 'blocks/footer/footer-media';
+@use 'blocks/hero/hero-media';
 
 html {
     scroll-behavior: smooth;
@@ -44,5 +46,14 @@ body {
 // Прижатый футер конец
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }

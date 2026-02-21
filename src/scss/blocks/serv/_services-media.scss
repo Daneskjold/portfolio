@@ -1,0 +1,27 @@
+@use 'base/mixins' as m;
+
+@media (min-width: 400px) {
+    .services-card__title {
+        @include m.h2(92px);
+    }
+}
+
+@media (min-width: 1100px) {
+    .services {
+        padding: 120px 16px;
+
+        &__heading {
+            margin-bottom: 40px;
+        }
+    }
+
+    .services-card {
+        &__title {
+            @include m.h1;
+        }
+
+        &+& {
+            margin-top: 64px;
+        }
+    }
+}

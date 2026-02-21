@@ -1,0 +1,46 @@
+@use 'base/mixins' as m;
+
+.services {
+    padding: 72px 20px;
+
+    &__heading {
+        @include m.parag_l;
+        text-align: center;
+        letter-spacing: -0.01em;
+        margin-bottom: 32px;
+    }
+}
+
+.services-card {
+
+    & + & {
+        margin-top: 32px;
+    }
+    
+    &__title {
+        @include m.h2(71px);
+        text-align: center;
+        margin-bottom: 16px;
+        letter-spacing: -0.04em;
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    &__skill {
+        @include m.parag_s_regular;
+        text-transform: uppercase;
+    
+        &::before {
+            content: '[ ';
+        }
+    
+        &::after {
+            content: ' ]';
+        }
+    }
+}

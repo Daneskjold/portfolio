@@ -7,10 +7,12 @@
 @use 'blocks/header/header';
 @use 'blocks/footer/footer';
 @use 'blocks/hero/hero';
+@use 'blocks/serv/services';
 
 @use 'blocks/header/header-media';
 @use 'blocks/footer/footer-media';
 @use 'blocks/hero/hero-media';
+@use 'blocks/serv/services-media';
 
 html {
     scroll-behavior: smooth;

@@ -1,0 +1,63 @@
+@use 'base/mixins' as m;
+
+.works {
+    &__container {
+        overflow: hidden;
+    }
+
+    &__title {
+        @include m.h2(92px, 133px);
+        letter-spacing: -0.04em;
+        border-top: var(--border);
+        border-bottom: var(--border);
+        width: max-content;
+        animation: moving-text 8s infinite linear;
+
+        &::before {
+            content: 'Works * Works * Works * Works * ';
+        }
+
+        &::after {
+            content: ' * Works * Works * Works';
+        }
+    }
+}
+
+.work-card {
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+        object-fit: cover;
+    }
+
+    &__caption {
+        padding: 20px;
+    }
+
+    &__title {
+        display: flex;
+        column-gap: 12px;
+    }
+
+    &__name, &__year {
+        @include m.parag_s_medium;
+        @include m.square_brackets;
+    }
+    
+    &__name {
+        text-transform: uppercase;
+        color: #20242F;
+    }
+
+    &__year {
+        color: #7F7E90;
+    }
+
+    &__description {
+        margin-top: 32px;
+        color: #20242F;
+    }
+}

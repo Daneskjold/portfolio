@@ -1,5 +1,6 @@
 @use 'libs/reboot';
 @use 'libs/fonts';
+@use 'libs/animation';
 
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
@@ -8,11 +9,13 @@
 @use 'blocks/footer/footer';
 @use 'blocks/hero/hero';
 @use 'blocks/serv/services';
+@use 'blocks/works/works';
 
 @use 'blocks/header/header-media';
 @use 'blocks/footer/footer-media';
 @use 'blocks/hero/hero-media';
 @use 'blocks/serv/services-media';
+@use 'blocks/works/works-media';
 
 html {
     scroll-behavior: smooth;

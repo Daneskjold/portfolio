@@ -20,6 +20,7 @@
     font-size: 18px;
     line-height: 1.33;
     font-weight: 300;
+    color: #20242F;
 }
 
 @mixin parag_l {
@@ -28,9 +29,9 @@
     font-weight: 400;
 }
 
-@mixin h2($font-size: 92px){
+@mixin h2($font-size: 92px, $line-height: .95) {
     font-size: $font-size;
-    line-height: .95;
+    line-height: $line-height;
     font-weight: 300;
 }
 
@@ -38,4 +39,14 @@
     font-size: 220px;
     line-height: 0.83;
     font-weight: 300;
+}
+
+@mixin square_brackets {
+    &::after {
+        content: ' ]'
+    }
+
+    &::before {
+        content: '[ '
+    }
 }

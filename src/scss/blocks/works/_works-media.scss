@@ -1,0 +1,79 @@
+@use 'base/mixins' as m;
+
+@media (min-width: 600px) {
+    .work-card {
+        &__figure {
+            display: flex;
+            border-bottom: var(--border);
+        }
+
+        &__picture {
+            width: 50%;
+            width: 50%;
+        }
+
+        &__img {
+            height: 100%;
+        }
+
+        // Отзеркаленные блоки начало
+        &__picture--reflected {
+            order: 2;
+        }
+
+        &__title--reflected{
+            justify-content: end;
+        }
+
+        &__description--reflected{
+            text-align: right;
+        }
+        // Отзеркаленные блоки конец
+    }
+}
+
+@media (min-width: 800px) {
+    .work-card {
+        &__caption {
+            display: flex;
+            padding: 32px;
+            column-gap: 32px;
+            justify-content: space-between;
+        }
+
+        &__title {
+            flex-direction: column;
+            justify-content: end;
+            row-gap: 12px;
+        }
+
+        &__name {
+            order: 2;
+        }
+
+        &__name,
+        &__year {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+
+        &__description{
+            display: flex;
+            align-items: end;
+            margin-top: 0;
+            text-align: right;
+            max-width: 380px;
+        }
+
+        // Отзеркаленные блоки начало
+
+        &__title--reflected{
+            order: 2;
+        }
+
+        &__description--reflected{
+            text-align: left;
+        }
+        // Отзеркаленные блоки конец
+    }
+}

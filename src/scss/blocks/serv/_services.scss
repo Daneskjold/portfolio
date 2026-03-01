@@ -34,13 +34,6 @@
     &__skill {
         @include m.parag_s_regular;
         text-transform: uppercase;
-    
-        &::before {
-            content: '[ ';
-        }
-    
-        &::after {
-            content: ' ]';
-        }
+        @include m.square_brackets;
     }
 }

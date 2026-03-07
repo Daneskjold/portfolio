@@ -28,7 +28,7 @@
 
     &__item {
         border-right: var(--border);
-        height: 71px;
+        height: var(--height-header);
         width: 100%;
         transition: background-color .2s;
 

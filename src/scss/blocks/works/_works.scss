@@ -1,13 +1,14 @@
 @use 'base/mixins' as m;
 
 .works {
+    scroll-margin-top: var(--height-header);
+
     &__container {
         overflow: hidden;
     }
 
     &__title {
         @include m.h2(92px, 133px);
-        letter-spacing: -0.04em;
         border-top: var(--border);
         border-bottom: var(--border);
         width: max-content;
@@ -24,6 +25,7 @@
 }
 
 .work-card {
+    border-bottom: var(--border);
 
     &__img {
         display: block;
@@ -42,11 +44,12 @@
         column-gap: 12px;
     }
 
-    &__name, &__year {
+    &__name,
+    &__year {
         @include m.parag_s_medium;
         @include m.square_brackets;
     }
-    
+
     &__name {
         text-transform: uppercase;
         color: #20242F;

@@ -1,0 +1,50 @@
+@use 'base/mixins' as m;
+
+.awards {
+   padding: 64px 20px;
+   scroll-margin-top: var(--height-header);
+
+   &__header {
+      max-width: 345px;
+   }
+
+   &__title {
+      @include m.h2(85px);
+   }
+
+   &__description {
+      margin: 21px 0 40px;
+   }
+
+   
+   &__item {
+      border-bottom: var(--border);
+      padding: 16px 0;
+   }
+   
+   &__name {
+      @include m.parag_m_regular;
+      margin-bottom: 5px;
+   }
+
+   &__info {
+      display: flex;
+      gap: 12px;
+   }
+
+   &__category,
+   &__date {
+      @include m.parag_s_regular;
+      @include m.square_brackets;
+   }
+
+   &__accent{
+      &::after {
+         content: ']';
+     }
+ 
+     &::before {
+         content: '[';
+     }
+   }
+}

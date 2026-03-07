@@ -10,12 +10,14 @@
 @use 'blocks/hero/hero';
 @use 'blocks/serv/services';
 @use 'blocks/works/works';
+@use 'blocks/awards/awards';
 
 @use 'blocks/header/header-media';
 @use 'blocks/footer/footer-media';
 @use 'blocks/hero/hero-media';
 @use 'blocks/serv/services-media';
 @use 'blocks/works/works-media';
+@use 'blocks/awards/awards-media';
 
 html {
     scroll-behavior: smooth;

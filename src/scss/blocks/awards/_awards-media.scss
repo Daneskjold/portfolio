@@ -1,0 +1,42 @@
+@use 'base/mixins' as m;
+
+@media (min-width: 390px) {
+    .awards {
+        &__title {
+            @include m.h2(92px);
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .awards {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 20px;
+
+        }
+
+        &__list {
+            flex-grow: 1;
+            max-width: 647px;
+        }
+
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            padding: 24px 0;
+            align-items: baseline;
+        }
+
+        &__name {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .awards{
+        padding: 88px 32px;
+    }
+}

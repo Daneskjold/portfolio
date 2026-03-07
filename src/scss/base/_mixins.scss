@@ -29,10 +29,11 @@
     font-weight: 400;
 }
 
-@mixin h2($font-size: 92px, $line-height: .95) {
+@mixin h2($font-size: 92px, $line-height: .96) {
     font-size: $font-size;
     line-height: $line-height;
     font-weight: 300;
+    letter-spacing: -0.04em;
 }
 
 @mixin h1 {

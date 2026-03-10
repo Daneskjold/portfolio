@@ -11,6 +11,7 @@
 @use 'blocks/serv/services';
 @use 'blocks/works/works';
 @use 'blocks/awards/awards';
+@use 'blocks/contact/contact';
 
 @use 'blocks/header/header-media';
 @use 'blocks/footer/footer-media';
@@ -18,6 +19,7 @@
 @use 'blocks/serv/services-media';
 @use 'blocks/works/works-media';
 @use 'blocks/awards/awards-media';
+@use 'blocks/contact/contact-media';
 
 html {
     scroll-behavior: smooth;

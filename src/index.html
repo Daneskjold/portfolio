@@ -343,6 +343,31 @@
                     </div>
                 </div>
             </section>
+
+            <section class="contact">
+                <div class="container contact__container">
+                    <p class="contact__subtitle">Have an idea?</p>
+                    <h2 class="contact__title" id="contact-title">Let’s talk!</h2>
+                    <form class="contact__form" action="#" method="post" aria-labelledby="contact-title">
+                        <div class="contact__field">
+                            <label class="visually-hidden" for="name">Enter a name</label>
+                            <input class="contact__input" id="name" name="name" type="text" autocomplete="name" required
+                                placeholder="Name">
+                        </div>
+                        <div class="contact__field">
+                            <label class="visually-hidden" for="email">Enter an email</label>
+                            <input class="contact__input" id="email" name="email" type="email" inputmode="email"
+                                autocomplete="email" required placeholder="Email">
+                        </div>
+                        <div class="contact__field">
+                            <label class="visually-hidden" for="message">Enter a message</label>
+                            <textarea class="contact__input contact__input--textarea" name="message" id="message"
+                                autocomplete="off" placeholder="Message"></textarea>
+                        </div>
+                        <button class="button contact__button" type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">

@@ -1,0 +1,63 @@
+@use 'base/mixins' as m;
+
+.contact {
+    &__container {
+        padding: 56px 16px;
+        border-top: var(--border);
+    }
+
+    &__subtitle {
+        @include m.parag_l;
+        text-align: center;
+    }
+
+    &__title {
+        @include m.h2;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    &__form {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+
+    &__field {
+        margin-bottom: 24px;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 14px 16px;
+        border: var(--border);
+        border-radius: 0;
+        background: rgba(255, 255, 255, 0.22);
+
+        &::placeholder {
+            @include m.parag_m_light;
+            color: #7F7E90;
+        }
+
+        &:focus {
+            outline: 1px solid black;
+            outline-offset: 1px;
+        }
+
+    }
+
+    &__input--textarea {
+        resize: none;
+        height: 262px;
+    }
+
+    &__button {
+        width: 100%;
+        height: 52px;
+        background-color: #20242F;
+        text-transform: uppercase;
+        color: #fff;
+        @include m.parag_m_regular;
+        border: none;
+    }
+}

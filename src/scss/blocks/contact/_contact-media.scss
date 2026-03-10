@@ -1,0 +1,18 @@
+@use 'base/mixins' as m;
+
+@media (min-width: 800px) {
+    .contact {
+        &__container{
+            padding: 88px 16px;
+        }
+    }
+
+}
+
+@media (min-width: 1100px) {
+    .contact {
+        &__title {
+            @include m.h1;
+        }
+    }
+}

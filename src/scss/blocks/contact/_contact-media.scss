@@ -3,7 +3,7 @@
 @media (min-width: 800px) {
     .contact {
         &__container{
-            padding: 88px 16px;
+            padding: 80px 16px;
         }
     }
 
@@ -14,5 +14,12 @@
         &__title {
             @include m.h1;
         }
+    }
+}
+
+@media (min-width: 1218px) {
+    .contact{
+        @include m.container;
+        border-inline: var(--border);
     }
 }

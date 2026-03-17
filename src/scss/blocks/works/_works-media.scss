@@ -76,3 +76,9 @@
         // Отзеркаленные блоки конец
     }
 }
+
+@media (min-width: 1218px) {
+    .works__list {
+        border-inline: var(--border);
+    }
+}

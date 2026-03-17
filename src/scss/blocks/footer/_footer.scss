@@ -49,6 +49,7 @@
     }
 
     &__mail span[aria-hidden] {
+        white-space: pre-wrap;
         display: inline-block;
         transition: transform .2s;
 
@@ -61,5 +62,9 @@
     &__copy {
         display: block;
         padding: 32px;
+
+        & span[aria-hidden] {
+            white-space: pre-wrap;
+        }
     }
 }

@@ -25,3 +25,10 @@
         }
     }
 }
+
+@media (min-width: 1218px) {
+    .services {
+        @include m.container;
+        border-inline: var(--border);
+    }
+}

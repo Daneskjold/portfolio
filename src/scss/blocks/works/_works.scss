@@ -7,20 +7,26 @@
         overflow: hidden;
     }
 
-    &__title {
-        @include m.h2(92px, 133px);
+    &__moving-text {
+        display: flex;
+        align-items: center;
         border-top: var(--border);
         border-bottom: var(--border);
         width: max-content;
-        animation: moving-text 8s infinite linear;
+        animation: moving-text 5s infinite linear;
 
-        &::before {
-            content: 'Works * Works * Works * Works * ';
-        }
+    }
 
-        &::after {
-            content: ' * Works * Works * Works';
-        }
+    &__moving-group {
+        display: flex;
+        align-items: center;
+        column-gap: 80px;
+        flex-shrink: 0;
+        padding-right: 80px;
+    }
+
+    &__title {
+        @include m.h2(92px, 133px);
     }
 }
 

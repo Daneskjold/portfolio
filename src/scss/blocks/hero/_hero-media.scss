@@ -1,3 +1,9 @@
+@media (min-width: 390px) {
+    .hero__title {
+        font-size: clamp(3rem, -0.07rem + 12.593vw, 9.375rem);
+    }
+}
+
 @media (min-width: 650px) {
     .hero {
         &__content {
@@ -6,22 +12,18 @@
 
         &__description {
             width: 75%;
-            padding: 30px 421px 30px 32px;
+            padding: 30px 32px;
             border-right: var(--border);
+        }
+
+        &__paragraph {
+            max-width: 427px;
         }
     }
 
     .social {
         width: 25%;
         padding: 28px 32px 28px 20px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .hero {
-        &__title {
-            font-size: 248px;
-        }
     }
 }
 

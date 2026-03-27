@@ -18,9 +18,15 @@
     }
     
     &__title {
-        @include m.h2(71px);
+        @include m.h2(53px);
+        // font-size: clamp(3.313rem, -0.483rem + 18.977vw, 13.75rem);
+        font-size: clamp(53px, -0.483rem + 18.977vw, 220px);
         text-align: center;
         margin-bottom: 16px;
+    }
+
+    &__title--uppercase{
+        text-transform: uppercase;
     }
     
     &__list {
@@ -30,9 +36,9 @@
         gap: 16px;
     }
     
-    &__skill {
-        @include m.parag_s_regular;
-        text-transform: uppercase;
-        @include m.square_brackets;
-    }
+    // &__skill {
+    //     @include m.parag_s_regular;
+    //     text-transform: uppercase;
+    //     @include m.square_brackets;
+    // }
 }

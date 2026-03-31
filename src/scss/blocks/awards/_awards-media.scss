@@ -1,52 +1,52 @@
-@use 'base/mixins' as m;
+// @use 'base/mixins' as m;
 
-@media (min-width: 390px) {
-    .awards {
-        &__title {
-            @include m.h2(92px);
-        }
-    }
-}
+// @media (min-width: 390px) {
+//     .awards {
+//         &__title {
+//             @include m.h2(92px);
+//         }
+//     }
+// }
 
-@media (min-width: 700px) {
-    .awards {
-        &__wrapper {
-            display: flex;
-            justify-content: space-between;
-            column-gap: 20px;
+// @media (min-width: 700px) {
+//     .awards {
+//         &__wrapper {
+//             display: flex;
+//             justify-content: space-between;
+//             column-gap: 20px;
 
-        }
+//         }
 
-        &__list {
-            flex-grow: 1;
-            max-width: 647px;
-        }
+//         &__list {
+//             flex-grow: 1;
+//             max-width: 647px;
+//         }
 
-        &__item {
-            display: flex;
-            justify-content: space-between;
-            padding: 23px 0;
-            align-items: baseline;
-        }
+//         &__item {
+//             display: flex;
+//             justify-content: space-between;
+//             padding: 23px 0;
+//             align-items: baseline;
+//         }
 
-        &__name {
-            margin-bottom: 0;
-        }
-    }
-}
+//         &__name {
+//             margin-bottom: 0;
+//         }
+//     }
+// }
 
-@media (min-width: 800px) {
-    .awards{
-        padding: 88px 0;
-        &__container{
-            padding: 0 32px;
-        }
-    }
-}
+// @media (min-width: 800px) {
+//     .awards{
+//         padding: 88px 0;
+//         &__container{
+//             padding: 0 32px;
+//         }
+//     }
+// }
 
-@media (min-width: 1218px) {
-    .awards {
-        @include m.container;
-        border-inline: var(--border);
-    }
-}
+// @media (min-width: 1218px) {
+//     .awards {
+//         @include m.container;
+//         border-inline: var(--border);
+//     }
+// }

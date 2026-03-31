@@ -3,61 +3,43 @@
 .contact {
     &__container {
         padding: 56px 16px;
-        border-top: var(--border);
     }
 
-    &__subtitle {
+    &__title {
         @include m.parag_l;
         text-align: center;
     }
 
-    &__title {
-        @include m.h2;
+    &__cta {
+        @include m.h2(clamp(5.75rem, 2.841rem + 14.545vw, 13.75rem));
         text-align: center;
-        margin-bottom: 48px;
+        margin-bottom: clamp(0.938rem, 0.188rem + 3.75vw, 3rem);
     }
 
-    &__form {
-        max-width: 768px;
+    &__item {
+        padding: 0 10px;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__link {
+        transition: transform .2s;
+
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    &__icon-svg {
+        display: block;
         margin: 0 auto;
     }
 
-
-    &__field {
-        margin-bottom: 24px;
-    }
-
-    &__input {
-        width: 100%;
-        padding: 14px 16px;
-        border: var(--border);
-        border-radius: 0;
-        background: rgba(255, 255, 255, 0.22);
-
-        &::placeholder {
-            @include m.parag_m_light;
-            color: #7F7E90;
-        }
-
-        &:focus {
-            outline: 1px solid black;
-            outline-offset: 1px;
-        }
-
-    }
-
-    &__input--textarea {
-        resize: none;
-        height: 262px;
-    }
-
-    &__button {
-        width: 100%;
-        height: 52px;
-        background-color: #20242F;
+    &__mail {
+        @include m.parag_s_medium;
         text-transform: uppercase;
-        color: #fff;
-        @include m.parag_m_regular;
-        border: none;
+        text-align: center;
+        display: block;
     }
 }

@@ -70,6 +70,7 @@ function building() {
         'src/js/script.min.js',
         'src/icons/**/*',
         'src/img/*.*',
+        '!src/img/src/**/*.*',
         'src/fonts/*.*',
         'src/**/*.html'
     ], { base: 'src', encoding: false })

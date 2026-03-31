@@ -32,7 +32,13 @@
     }
 
     &__link {
+        display: inline-block;
         @include m.parag_s_medium;
         text-transform: uppercase;
+        transition: transform .2s;
+
+        &:hover {
+            transform: scale(1.15);
+        }
     }
 }

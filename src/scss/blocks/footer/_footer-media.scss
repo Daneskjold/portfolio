@@ -1,7 +1,6 @@
 @media (hover: none) {
     .footer {
-        &__menu-link:hover,
-        &__mail span[aria-hidden]:hover {
+        &__menu-link:hover {
             transform: none;
         }
     }
@@ -12,27 +11,15 @@
     .footer {
         &__content {
             display: grid;
-            grid-template-areas:
-                "menu mail"
-                "copy copy";
             grid-template-columns: 1fr 1fr;
         }
 
         &__menu {
-            grid-area: menu;
             border-right: var(--border);
-        }
-
-        &__mail {
-            grid-area: mail;
-        }
-
-        &__copy {
-            grid-area: copy;
+            border-bottom: none;
         }
 
         &__menu,
-        &__mail,
         &__copy {
             display: flex;
             justify-content: center;
@@ -46,34 +33,10 @@
     }
 }
 
-@media (min-width: 650px) {
-    .footer {
-        &__content {
-            grid-template-areas:
-                "menu mail copy";
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        &__mail {
-            border-right: var(--border);
-            padding: 78px 10px;
-        }
-
-        &__menu,
-        &__mail {
-            border-bottom: none;
-        }
-    }
-}
-
 @media (min-width: 1200px) {
     .footer {
-        .container {
+        &__container {
             border-inline: var(--border);
-        }
-
-        &__logo {
-            padding: 95px 0;
         }
     }
 }

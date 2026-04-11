@@ -9,12 +9,14 @@
 
     &__moving-text {
         display: flex;
+        will-change: transform; //добавил
         align-items: center;
         border-top: var(--border);
         border-bottom: var(--border);
         width: max-content;
-        animation: moving-text 8s infinite linear;
-
+        -webkit-backface-visibility: hidden; //добавил
+        backface-visibility: hidden; //добавил
+        // animation: moving-text 8s infinite linear;
     }
 
     &__moving-group {
@@ -32,13 +34,20 @@
 
 .work-card {
     border-bottom: var(--border);
+    transition: transform .2s;
 
+    &__picture {
+        overflow: hidden;
+    }
+    
+    
     &__img {
         display: block;
         width: 100%;
         height: auto;
         max-width: 600px;
         object-fit: cover;
+        transition: transform .2s ;
     }
 
     &__caption {
@@ -69,5 +78,15 @@
     &__description {
         margin-top: 32px;
         color: #20242F;
+    }
+
+    &--visible &__img {
+        transform: scale(1.05);
+    }
+
+    &:hover{
+        .work-card__img{
+            transform: scale(1.05);
+        }
     }
 }
